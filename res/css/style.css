@@ -36,3 +36,11 @@ a:hover {
     background-color: #7ebeb6;
     color: #092747;
 }
+
+.login {
+    background-color: aqua;
+    border-radius: 5px;
+    max-width: 500px;
+    align-items: center;
+    justify-content: auto;
+}

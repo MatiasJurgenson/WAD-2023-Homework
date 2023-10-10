@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login page</title>
+        <title>Post page</title>
         <link rel="stylesheet" href="res/css/style.css">
-        <link rel="stylesheet" href="res/css/styleLogin.css">
+        <link rel="stylesheet" href="res/css/stylePost.css">
     </head>
     <body>
         <header class="header">
@@ -15,5 +15,19 @@
             
             <a class="logo" href="#"><img src="res/images/pfp.png" width="50" height="50" alt="My picture"></a>
         </header>
+        <div class="postbox">
+            <form>
+                <div>
+                    <label for="postBody" class="labels">Post body</label>
+                    <input id="postBody">
+                </div>
+                <div>
+                    <p class="labels">Select file</p>
+                    <label for="postFile" class="uploadButton">Select file</label>
+                    <input id="postFile" type="file" hidden/>
+                </div>
+                <button type="submit">Create Post</button>
+            </form>
+        </div>
     </body>
 </html>

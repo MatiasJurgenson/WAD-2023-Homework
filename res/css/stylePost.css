@@ -15,7 +15,7 @@
 }
 
 
-.postbox form {
+.postbox > form {
     padding: 10px;
     display: flex;
     flex-direction: column;

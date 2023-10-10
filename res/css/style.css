@@ -1,46 +1,89 @@
-
 * {
     font-family: sans-serif;
     box-sizing: border-box;
-  }
 
-.logo {
+}
+
+body {
+    line-height: 1.6;
     margin: 0;
-    font-size: 1.1em;
-  }
+    padding:0;
+    padding-top: 65px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: #327bc4;
+    text-decoration: none;
+    margin-left: 1em;
+}
 
 .header {
-    padding: .5em;
-    border: 1px solid #646174;
-    background-color: #a2ccea;
-    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-
-    border-radius: 5px;
-
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-
-
-.header a {
-    color: #34495e;
-    text-decoration: none;
     padding-top: .5em;
-}
-
-a:hover {
-    background-color: #7ebeb6;
-    color: #092747;
-}
-
-.login {
-    background-color: aqua;
+    padding-bottom: .5em;
+    border: 1px solid #646174;
     border-radius: 5px;
-    max-width: 500px;
-    align-items: center;
-    justify-content: auto;
+    background-color: #303030;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+
+
+}
+
+.nav {
+    margin-top: 5px;
+     }
+
+.nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    color: #327bc4;
+    font-size: .99em;
+       }
+
+/* Pseudo-class selector */
+.nav a:hover {
+    background-color: #4e7bcf;
+    color: #041c36;
+}
+
+.logo {
+    margin-right: 10px;
+    font-size: 1.1em;
+      }
+
+/* 
+Applies when the browser's width is 1000px wide or wider: 
+*/
+
+@media (min-width: 1000px) {
+    .header,
+    .nav {
+        display: flex;
+    }
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 999px) {
+    .header,
+    .nav {
+        display: flex;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
 }

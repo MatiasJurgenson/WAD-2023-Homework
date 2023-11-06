@@ -1,10 +1,18 @@
 window.onload = function() {
 
-       fetch('https://api.jsonbin.io/v3/b/65491f7154105e766fcc4043')
+        // https://api.jsonbin.io/v3/b/65491f7154105e766fcc4043
+        // res/json/posts.json
+       fetch("res/json/posts.json")
            .then((response) => response.json())
            .then(json => {
-               console.log(json.record); 
-               let array = json.record;
+
+               let array
+               if (json.length == undefined){ // if from online source
+                array = json.record; // online source doesn't give an array of objects immediately
+               } else {
+                array = json
+               }
+               
                for (let i = 0; i < array.length; i++){
                     let div_post = document.createElement("div");
                     div_post.className = "post";

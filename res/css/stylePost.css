@@ -1,5 +1,5 @@
 .postbox {
-    background-color: #b6b6b6;
+    background-color: var(--teritary-color);
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -41,7 +41,8 @@
 
 .uploadButton {
     height: 40px;
-    background-color: #7f7f7f;
+    background-color: var(--accent-color);
+    color: var(--light-text);
     font-size: large;
     padding: 5px 10px 5px 10px;
     text-align: center;

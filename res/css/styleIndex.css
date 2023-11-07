@@ -35,31 +35,12 @@ section {
     display: block;
 }
 
-
-.nav {
-    margin-top: 5px;
-     }
-
-.nav a {
-    padding: 10px 15px;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
-    color: #327bc4;
-    font-size: .99em;
-       }
-
-/* Pseudo-class selector */
-.nav a:hover {
-    background-color: #4e7bcf;
-    color: #041c36;
-}
-
-
 .footer{
-    border-radius: 5px;
-    border: 1px solid #327bc4;
-    background-color: #303030;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid var(--accent-color);
+    background-color: var(--primary-color);
+    padding: 5px;
     margin: auto;
 }
 
@@ -74,14 +55,14 @@ section {
 
 .flex-container p {
     margin: 1em;
-    color: #ffffff;
+    color: var(--light-text)
 }
 
 .sides {
     min-height: 100%;
     width: 25%;
-    background-color: #303030;
-    border: 1px solid #646174;
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent-color);
     border-radius: 5px;
     
     
@@ -95,8 +76,8 @@ section {
 }
 
 .post { /*<a href="https://www.flaticon.com/free-icons/thumbs-up" title="thumbs up icons">Thumbs up icons created by vectorspoint - Flaticon</a>*/
-    background-color: #303030;
-    border: 1px solid #646174;
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent-color);
 
     border-radius: 5px;
     margin-bottom: 10px;

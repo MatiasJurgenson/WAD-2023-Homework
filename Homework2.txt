@@ -1,0 +1,3 @@
+Team number: W
+Names: Matias Jürgenson, Juhan Pauklin, Joosep Hubel
+Link to the repository: https://github.com/MatiasJurgenson/WAD-2023-Homework

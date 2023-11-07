@@ -69,9 +69,13 @@ section {
 
     flex-direction: row;
     justify-content: space-between;
-    align-items: stretch;
-    
-  }
+    align-items: stretch; 
+}
+
+.flex-container p {
+    margin: 1em;
+    color: #ffffff;
+}
 
 .sides {
     min-height: 100%;
@@ -115,12 +119,6 @@ a + span  {
     font-size: 1.1em;
     padding: 1em;
 
-}
-
-
-div p{
-    margin: 1em;
-    color: #ffffff;
 }
 
 .postImage{

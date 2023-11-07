@@ -6,14 +6,20 @@
     <title>Login page</title>
     <link rel="stylesheet" href="res/css/style.css">
     <link rel="stylesheet" href="res/css/styleLogin.css">
+    <script type="text/javascript" src="res/js/profileManager.js"></script>
 </head>
 <body>
     <header class="header">
         <ul class="nav">
             <a href="index.html">Home</a>
         </ul>
-        
-        <a class="logo" href="#"><img src="res/images/pfp.png" width="50" height="50" alt="My picture"></a>
+
+        <img src="res/images/pfp.png" class="logo" id="openProfile" width="50" height="50" alt="My picture"></a>
+        <div class="profile" id="profile">
+            <p>John Doe</p>
+            <p>john.doe@ut.ee</p>
+            <p>logout</p>
+        </div>
     </header>
     
     <div class="login">

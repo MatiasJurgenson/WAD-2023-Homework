@@ -101,3 +101,13 @@ Applies when the browser's width is 1000px wide or wider:
         align-items: center;
     }
 }
+
+.profile {
+    display: none;
+    padding: 10px;
+    width: 250px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #7f7f7f;
+    line-height: 1.0;
+}

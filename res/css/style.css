@@ -57,12 +57,12 @@ button:hover {
     left:0;
     right:0;
     top:0;
-
-
+    z-index: 1;
 }
 
 .nav {
-    margin-top: 5px;
+    margin-top: 3px;
+    line-height: 1.6;
 }
 
 .nav a {
@@ -72,6 +72,7 @@ button:hover {
     display: block;
     color: var(--teritary-color);
     font-size: .99em;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
     
 /* Pseudo-class selector */
@@ -109,6 +110,12 @@ Applies when the browser's width is 1000px wide or wider:
         flex-direction: column;
         align-items: center;
     }
+    a {
+        margin-left: 0px;
+    }
+    .logo {
+        margin-right: 0px;
+    }
 }
 
 .profile {
@@ -120,6 +127,9 @@ Applies when the browser's width is 1000px wide or wider:
     background-color: var(--accent-color);
     color: var(--light-text);
     line-height: 1.0;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+    transform-origin: top right;
 }
 
 .profile p {

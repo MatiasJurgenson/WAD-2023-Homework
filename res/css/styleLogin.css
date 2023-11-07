@@ -12,6 +12,13 @@ body {
     max-width: 300px;
     text-align: center;
     padding: 5px 0px 5px 0px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
+}
+
+.login:hover {
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
 }
 
 input {
@@ -22,5 +29,9 @@ input {
 @media (max-width: 1000px) {
     body {
         padding-top: 150px; 
+    }
+    .login:hover {
+        box-shadow: none;
+        transform: none;
     }
 }

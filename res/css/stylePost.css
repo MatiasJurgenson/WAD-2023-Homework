@@ -9,8 +9,14 @@
     padding: 5px 0px 5px 0px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
 }
 
+.postbox:hover {
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
 
 .postbox > form {
     padding: 10px;
@@ -24,7 +30,6 @@
     flex-direction: row;
     justify-content: auto;
     text-align: right;
-    margin-bottom: 10px;
 }
 
 .postbox input#postBody {
@@ -55,7 +60,8 @@
 }
 
 button {
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 textarea {
@@ -63,8 +69,20 @@ textarea {
     height: 150px;
 }
 
+h2 {
+    margin: 10px;
+    margin-top: 0px;
+}
+
 @media (max-width: 1000px) {
     .postbox {
         margin-top: 4.5em;
+    }
+    .button {
+        margin: 0px;
+    }
+    .postbox:hover {
+        box-shadow: none;
+        transform: none;
     }
 }
